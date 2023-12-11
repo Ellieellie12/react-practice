@@ -1,0 +1,11 @@
+const Greeter = (props) => {
+  return (  
+    <h1>Hello, friend</h1>
+  )
+}
+
+export default Greeter
+
+
+//props are properties key: value pairs
+// There are two ways that a componenent can access information 1 is: storing it in state 2: passing it as a prop
