@@ -1,6 +1,8 @@
 const Greeter = (props) => {
 
-  
+  const things = ['Dinosaur Bones', 'Oil', 'Rocks']
+
+  const listOfThings = things.map(thing => <li>{thing}</li>)
   return (  
     <>
       <h1>Hello, {props.friend ? props.friend.name : 'friend'}</h1>
@@ -8,6 +10,10 @@ const Greeter = (props) => {
       <h2>I believe in you are {props.age} years old.</h2>
       <p>Today is {new Date().getDay() === 1 ? 'Monday' : 'not Monday'}</p>
       {/* get current day */}
+      <h3>Give us your:</h3>
+      <ul>
+        {listOfThings}
+      </ul>
     </>
     
   )
