@@ -1,11 +1,12 @@
 import './App.css'
+import Greeter from './Greeter'
 
 function App() {
 
   return (
-    <div>
-
-    </div>
+    <>
+    <Greeter quote age={27} friend={{name: 'Wilma', town: 'Roswell'}} />
+    </>
   )
 }
 
