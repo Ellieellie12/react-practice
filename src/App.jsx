@@ -5,7 +5,11 @@ function App() {
 
   return (
     <>
-    <Greeter quote age={27} friend={{name: 'Wilma', town: 'Roswell'}} />
+    <Greeter 
+      quote='Yabba Dabba Doo!' 
+      age={27} 
+      friend={{name: 'Wilma', town: 'Roswell'}} 
+      />
     </>
   )
 }
