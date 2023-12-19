@@ -2,7 +2,8 @@ const Greeter = (props) => {
 
   const things = ['Dinosaur Bones', 'Oil', 'Rocks']
 
-  const listOfThings = things.map(thing => <li key={thing}>{thing}</li>)
+  // const listOfThings = things.map(thing => <li key={thing}>{thing}</li>)
+  
   return (  
     <>
       <h1>Hello, {props.friend ? props.friend.name : 'friend'}</h1>
@@ -12,7 +13,8 @@ const Greeter = (props) => {
       {/* get current day */}
       <h3>Give us your:</h3>
       <ul>
-        {listOfThings}
+        {things.map(thing => <li key={thing}>{thing}</li>)}
+        {/* {listOfThings} */}
       </ul>
     </>
     
